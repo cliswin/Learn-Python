@@ -41,5 +41,5 @@ if name in people: print("{}'s {} is {}.".format(name, labels[key], people[name]
 
 
 # 输出结果：Name: Beth
-           Phone number (p) or address (a)? p
-           Beth's phone number is 9102.
+#          Phone number (p) or address (a)? p
+#          Beth's phone number is 9102.
