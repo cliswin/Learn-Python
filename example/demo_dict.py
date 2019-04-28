@@ -38,6 +38,18 @@ if request == 'a': key = 'addr'
 
 # 仅当名字是字典包含的键时才打印信息：
 if name in people: print("{}'s {} is {}.".format(name, labels[key], people[name][key]))
+   
+
+# 用get()方法来访问数据库条目
+key = request  # 如果request既不是'p'也不是'a'
+if request == 'p': key = 'phone'
+if request == 'a': key = 'addr'
+# 使用get提供默认值
+person = people.get(name, {})
+label = labels.get(key, key)
+result = person.get(key, 'not available')
+
+print("{}'s {} is {}.".format(name, label, result))
 
 
 # 输出结果：Name: Beth
