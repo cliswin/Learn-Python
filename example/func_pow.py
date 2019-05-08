@@ -1,6 +1,6 @@
 # 函数pow()指幂运算符
 
-var = pow(2,3)
+var = pow(2, 3)
 print(var)
 
 
